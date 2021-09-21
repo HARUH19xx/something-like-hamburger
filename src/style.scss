@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: #c0c0c0;
+}
+
+nav {
+    display: flex;
+}
+
+.hamburgerMenu {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  right: -300px;
+  background-color: #fff;
+  transition: all 0.4s;
+  transition-timing-function: ease-in-out;
+}
+
+.hamburgerMenu.open {
+  transform: translateX(-300px);
+}
+
+.hamburgerMenu-box {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    a {
+        padding: 10px 0;
+    }
+}
+
+.hamurerMenu-button {
+  position: absolute;
+  top: 0;
+  right: 300px;
+  width: 60px;
+  height: 60px;
+  border: solid #fff 1px;
+  cursor: pointer;
+}
+
+.icon {
+  width: 35px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  top: 14.5px;
+  left: 12.5px;
+  transition: all 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.icon-m {
+  content: '';
+  width: 35px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  top: 29.5px;
+  left: 12.5px;
+  transition: all 0.5s;
+  transition-timing-function:ease-out;
+}
+
+.icon-b {
+  content: '';
+  width: 35px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  top: 44.5px;
+  left: 12.5px;
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.icon.open {
+  transform: translateY(14.5px) rotate(135deg);
+}
+
+.icon-b.open {
+  transform: translateY(-14.5px) rotate(-135deg);
+}
+
+.icon-m.open {
+  opacity: 0;
+}
