@@ -1,10 +1,10 @@
 import './style.scss'
 
-document.querySelector('.hamurerMenu-button').addEventListener('click', () => {
+document.querySelector('.l_hamurerMenu__button').addEventListener('click', () => {
 
-    let icon = document.querySelector('.icon');
-    let iconM = document.querySelector('.icon-m');
-    let iconB = document.querySelector('.icon-b');
+    let icon = document.querySelector('.c_icon');
+    let iconM = document.querySelector('.c_icon-m');
+    let iconB = document.querySelector('.c_icon-b');
   
     if (icon.classList.contains('open') == true) {
       icon.classList.remove('open');
@@ -24,7 +24,7 @@ document.querySelector('.hamurerMenu-button').addEventListener('click', () => {
       iconM.classList.add('open');
     }
   
-    let hamburgerMenu = document.querySelector('.hamburgerMenu');
+    let hamburgerMenu = document.querySelector('.l_hamburgerMenu');
   
     if (hamburgerMenu.classList.contains('open') == true) {
       hamburgerMenu.classList.remove('open');
