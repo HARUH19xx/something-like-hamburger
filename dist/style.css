@@ -1,32 +1,19 @@
 /*!*****************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/style.scss ***!
   \*****************************************************************************************************************************************************************/
-.l_body {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  background-color: #c0c0c0;
-}
-
-.l_nav {
-  display: flex;
-}
-
-.l_hamburgerMenu {
+.c_hamburgerMenu {
   position: fixed;
   width: 300px;
   height: 100%;
   right: -300px;
   background-color: #fff;
   transition: all 0.4s;
-  transition-timing-function: ease-in-out;
 }
-
-.l_hamburgerMenu.open {
+.c_hamburgerMenu.open {
   transform: translateX(-300px);
 }
 
-.l_hamburgerMenu__box {
+.e_hamburgerMenu_box {
   padding-left: 0;
   display: flex;
   align-items: center;
@@ -35,11 +22,13 @@
   width: 100%;
   height: 100%;
 }
-.l_hamburgerMenu__box a {
+.e_hamburgerMenu_box a {
+  color: black;
   padding: 10px 0;
+  text-decoration: none;
 }
 
-.l_hamurerMenu__button {
+.e_hamurerMenu_button {
   position: absolute;
   top: 0;
   right: 300px;
@@ -49,7 +38,11 @@
   cursor: pointer;
 }
 
-.c_icon {
+.e_icon-t, .e_icon-m, .e_icon-b {
+  caret-color: transparent;
+}
+
+.e_icon-t {
   width: 35px;
   height: 1px;
   background-color: #fff;
@@ -57,10 +50,12 @@
   top: 14.5px;
   left: 12.5px;
   transition: all 0.5s;
-  transition-timing-function: ease-in-out;
+}
+.e_icon-t.open {
+  transform: translateY(14.5px) rotate(45deg);
 }
 
-.c_icon-m {
+.e_icon-m {
   content: "";
   width: 35px;
   height: 1px;
@@ -69,10 +64,12 @@
   top: 29.5px;
   left: 12.5px;
   transition: all 0.5s;
-  transition-timing-function: ease-out;
+}
+.e_icon-m.open {
+  opacity: 0;
 }
 
-.c_icon-b {
+.e_icon-b {
   content: "";
   width: 35px;
   height: 1px;
@@ -81,19 +78,20 @@
   top: 44.5px;
   left: 12.5px;
   transition: all 0.5s;
-  transition-timing-function: ease-out;
+}
+.e_icon-b.open {
+  transform: translateY(-14.5px) rotate(-45deg);
 }
 
-.c_icon.open {
-  transform: translateY(14.5px) rotate(135deg);
+.l_body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: #c0c0c0;
 }
 
-.c_icon-b.open {
-  transform: translateY(-14.5px) rotate(-135deg);
-}
-
-.c_icon-m.open {
-  opacity: 0;
+.l_nav {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map*/
