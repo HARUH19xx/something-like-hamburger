@@ -3,7 +3,7 @@ import './style.scss'
 const button = document.querySelector('.e_hamurerMenu_button')
 const hamburgerMenu = document.querySelector('.c_hamburgerMenu')
 
-const handleOpen = () => {
+const handleToggle = () => {
   let iconT = document.querySelector('.e_icon-t');
   let iconM = document.querySelector('.e_icon-m');
   let iconB = document.querySelector('.e_icon-b');
@@ -21,4 +21,4 @@ const handleOpen = () => {
   }
 }
 
-button.addEventListener('click', handleOpen)
+button.addEventListener('click', handleToggle)
