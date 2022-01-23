@@ -5,7 +5,6 @@
   right: -300px;
   background-color: #fff;
   transition: all 0.4s;
-  // transition-timing-function: ease-in-out;
   &.open {
     transform: translateX(-300px);
   }
@@ -43,7 +42,6 @@
     top: 14.5px;
     left: 12.5px;
     transition: all 0.5s;
-    // transition-timing-function: ease-in-out;
     &.open {
       transform: translateY(14.5px) rotate(45deg);
     }
@@ -57,7 +55,6 @@
     top: 29.5px;
     left: 12.5px;
     transition: all 0.5s;
-    // transition-timing-function: ease-in-out;
     &.open {
       opacity: 0;
     }
@@ -71,7 +68,6 @@
     top: 44.5px;
     left: 12.5px;
     transition: all 0.5s;
-    // transition-timing-function: ease-in-out;
     &.open {
       transform: translateY(-14.5px) rotate(-45deg);
     }
